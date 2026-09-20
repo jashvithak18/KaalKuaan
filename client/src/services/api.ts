@@ -1,5 +1,12 @@
 import { Well, ComplianceRecord, AuditLogEntry, StatisticsData, UserProfile } from '../types';
-const API_BASE = (import.meta.env.VITE_API_URL ? (import.meta.env.VITE_API_URL as string).replace(/\/$/, '') : '') + '/api';
+const DEFAULT_PROD_API = 'https://kaalkuaan.onrender.com';
+const API_BASE = (
+  import.meta.env.VITE_API_URL
+    ? (import.meta.env.VITE_API_URL as string).replace(/\/$/, '')
+    : (import.meta.env.PROD && typeof window !== 'undefined' && !window.location.hostname.includes('onrender.com')
+        ? DEFAULT_PROD_API
+        : '')
+) + '/api';
 
 export const api = {
   // Wells

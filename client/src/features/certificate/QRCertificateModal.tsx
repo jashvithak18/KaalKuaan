@@ -24,7 +24,8 @@ export const QRCertificateModal: React.FC<QRCertificateModalProps> = ({
     sealHash: '4C91A07E81BF99D2'
   };
 
-  const verifyUrl = `${window.location.origin}/verify/${well.wellId}`;
+  const siteOrigin = typeof window !== 'undefined' && window.location.origin ? window.location.origin : 'https://kaalkuaan.onrender.com';
+  const verifyUrl = `${siteOrigin}/verify/${well.wellId}`;
 
   const handlePrint = () => {
     window.print();

@@ -2,6 +2,8 @@
 ### Indian Public-Safety Infrastructure Platform for Open & Abandoned Borewell Prevention
 
 > **Core Axiom:** *“An open borewell is invisible until it becomes an emergency. Find the hole before someone falls into it.”*
+> 
+> 🌐 **Live Production Deployment:** [https://kaalkuaan.onrender.com](https://kaalkuaan.onrender.com)
 
 ---
 

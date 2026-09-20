@@ -19,7 +19,7 @@ This guide outlines deployment options for the **Kaal Kuaan Public Borewell Safe
 ### Frontend (`client/.env`)
 | Variable | Value / Description | Required |
 |---|---|---|
-| `VITE_API_URL` | Base URL of the backend (e.g. `https://kaalkuaan-api.onrender.com`). Leave empty if serving client from the same Node server. | Optional (for split deploys) |
+| `VITE_API_URL` | Base URL of the backend (`https://kaalkuaan.onrender.com`). Leave empty if serving client from the same Node server. | Optional (for split deploys) |
 
 ---
 
@@ -28,18 +28,19 @@ This guide outlines deployment options for the **Kaal Kuaan Public Borewell Safe
 ### Backend on Render:
 1. Connect your GitHub repository to [Render](https://render.com).
 2. Create a **New Web Service**:
+   - **Service Name**: `kaalkuaan` (gives `https://kaalkuaan.onrender.com`)
    - **Root Directory**: `server`
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
    - **Environment Variables**: Add the variables from table above (`MONGODB_URI`, `JWT_SECRET`, `GROQ_API_KEY`, `NODE_ENV=production`).
-3. Copy your deployed Render backend URL (e.g., `https://kaalkuaan-api.onrender.com`).
+3. Your live API endpoint will be: `https://kaalkuaan.onrender.com`.
 
 ### Frontend on Vercel:
 1. Connect your repository to [Vercel](https://vercel.com).
 2. Set **Root Directory** to `client`.
 3. Framework Preset: **Vite**.
 4. In **Environment Variables**, add:
-   - `VITE_API_URL`: `https://kaalkuaan-api.onrender.com`
+   - `VITE_API_URL`: `https://kaalkuaan.onrender.com`
 5. Click **Deploy**.
    - Note: The `client/vercel.json` SPA rewrite is already pre-configured so deep routes will not 404.
 
@@ -64,6 +65,6 @@ The backend server is already pre-configured to automatically serve `client/dist
 ## 4. Verification & Health Check
 
 After deployment, verify the endpoints:
-- **API Health**: `GET https://your-backend.com/api/health`
-- **Wells API**: `GET https://your-backend.com/api/wells`
-- **AI Safety Assistant**: `POST https://your-backend.com/api/ai/assistant`
+- **API Health**: `GET https://kaalkuaan.onrender.com/api/health`
+- **Wells API**: `GET https://kaalkuaan.onrender.com/api/wells`
+- **AI Safety Assistant**: `POST https://kaalkuaan.onrender.com/api/ai/assistant`
