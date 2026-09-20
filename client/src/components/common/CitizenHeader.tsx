@@ -35,12 +35,12 @@ export const CitizenHeader: React.FC<CitizenHeaderProps> = ({
             <span className="font-serif font-bold text-base sm:text-lg text-stone-900 tracking-tight leading-none">
               KAAL KUAAN
             </span>
-            <span className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-stone-200 text-stone-700 rounded">
+            <span className="inline-block px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-stone-200 text-stone-700 rounded border border-stone-300">
               Danger Beneath Every Step
             </span>
           </div>
-          <span className="text-[10px] text-stone-500 font-medium hidden md:block">
-            Telangana Public Borewell Safety
+          <span className="text-[10px] text-stone-600 font-medium block">
+            Danger Beneath Every Step
           </span>
         </div>
       </div>

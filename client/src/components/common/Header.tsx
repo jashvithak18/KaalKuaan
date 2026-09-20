@@ -38,8 +38,8 @@ export const Header: React.FC<HeaderProps> = ({
               DANGER BENEATH EVERY STEP
             </span>
           </div>
-          <div className="text-[11px] text-earth font-sans hidden sm:block">
-            Indian Public-Safety Borewell Prevention Network
+          <div className="text-[11px] text-earth font-sans block">
+            Danger Beneath Every Step
           </div>
         </div>
       </div>

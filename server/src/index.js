@@ -55,8 +55,17 @@ const path = require('path');
 const fs = require('fs');
 
 // Serve frontend SPA build if present (enables single-service monolith deployment)
-const clientDistPath = path.join(__dirname, '../../client/dist');
-if (fs.existsSync(clientDistPath)) {
+const candidatePaths = [
+  path.join(__dirname, '../public'),
+  path.join(__dirname, '../../client/dist'),
+  path.join(process.cwd(), 'public'),
+  path.join(process.cwd(), '../client/dist'),
+  path.join(process.cwd(), 'client/dist')
+];
+const clientDistPath = candidatePaths.find(p => fs.existsSync(path.join(p, 'index.html')));
+
+if (clientDistPath) {
+  console.log(`[STATIC] Serving frontend SPA from: ${clientDistPath}`);
   app.use(express.static(clientDistPath));
   app.get('*', (req, res, next) => {
     if (req.originalUrl.startsWith('/api')) {
