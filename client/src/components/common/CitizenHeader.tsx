@@ -36,7 +36,7 @@ export const CitizenHeader: React.FC<CitizenHeaderProps> = ({
               KAAL KUAAN
             </span>
             <span className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider bg-stone-200 text-stone-700 rounded">
-              The Wells That Wait
+              Danger Beneath Every Step
             </span>
           </div>
           <span className="text-[10px] text-stone-500 font-medium hidden md:block">

@@ -26,7 +26,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenFieldMap, unveri
               </h1>
 
               <div className="text-lg md:text-xl font-mono tracking-widest text-earth uppercase font-bold mt-2 pb-3 border-b border-[#D5CFBF]">
-                THE WELLS THAT WAIT
+                DANGER BENEATH EVERY STEP
               </div>
             </div>
 

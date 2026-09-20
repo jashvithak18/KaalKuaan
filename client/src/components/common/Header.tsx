@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({
               KAAL KUAAN
             </span>
             <span className="text-[10px] font-mono tracking-widest text-earth uppercase px-1.5 py-0.2 bg-parchment-dark border border-[#D5CFBF]">
-              THE WELLS THAT WAIT
+              DANGER BENEATH EVERY STEP
             </span>
           </div>
           <div className="text-[11px] text-earth font-sans hidden sm:block">

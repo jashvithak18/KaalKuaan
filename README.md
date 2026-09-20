@@ -1,4 +1,4 @@
-# KAAL KUAAN ("The Wells That Wait")
+# KAAL KUAAN ("Danger Beneath Every Step")
 ### Indian Public-Safety Infrastructure Platform for Open & Abandoned Borewell Prevention
 
 > **Core Axiom:** *“An open borewell is invisible until it becomes an emergency. Find the hole before someone falls into it.”*

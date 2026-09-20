@@ -270,7 +270,7 @@ export const PublicLandingPage: React.FC<PublicLandingPageProps> = ({
             <div>
               <span className="font-serif font-bold text-stone-900 text-sm">KAAL KUAAN</span>
               <span className="mx-2">•</span>
-              <span>The Wells That Wait</span>
+              <span>Danger Beneath Every Step</span>
               <p className="text-[11px] text-stone-600 mt-0.5">
                 Public safety technology for Telangana under the WALTA Act, 2002 framework.
               </p>
