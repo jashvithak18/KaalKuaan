@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F3F0E8;
+    color: #20251F;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: "DM Serif Display", Fraunces, Georgia, serif;
+  }
+
+  .font-mono-code {
+    font-family: "IBM Plex Mono", monospace;
+  }
+}
+
+/* Authentic Cadastral Map & Physical Paper Utilities */
+.paper-texture {
+  background-color: #FAF8F2;
+  border: 1px solid #E4DFD3;
+}
+
+.paper-stamp {
+  border: 2px solid #7E302A;
+  color: #7E302A;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transform: rotate(-3deg);
+  display: inline-block;
+  padding: 2px 8px;
+}
+
+.paper-stamp-safe {
+  border: 2px solid #68775E;
+  color: #68775E;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transform: rotate(-2deg);
+  display: inline-block;
+  padding: 2px 8px;
+}
+
+/* Subtle Travelling Survey Line Motif */
+@keyframes surveyScan {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-survey-scan {
+  animation: surveyScan 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Leaflet Overrides for Field Survey GIS Style */
+.leaflet-container {
+  background-color: #EDE8DD !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  z-index: 1 !important;
+  isolation: isolate;
+}
+
+.leaflet-pane {
+  z-index: 2 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 5 !important;
+}
+
+.leaflet-popup-pane {
+  z-index: 6 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FAF8F2 !important;
+  color: #20251F !important;
+  border: 1px solid #D8D2C2 !important;
+  border-radius: 0px !important;
+  box-shadow: 0 4px 12px rgba(32, 37, 31, 0.12) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #FAF8F2 !important;
+  border: 1px solid #D8D2C2 !important;
+}
